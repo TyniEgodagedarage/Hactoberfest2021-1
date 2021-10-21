@@ -1,0 +1,21 @@
+weight = float(input("weight in kg"))
+height=float("height in cm"))
+h=(height/100)**2
+bmi=round(weight/h,1)
+bmilower,bmiupper,bmiobese=18.5,24.9,30.0
+wlower=bmilower*h
+wupper=bmiupper*h
+wobese=bmiobese*h
+wl=abs(weight-wlower)
+wu=abs(weight-wupper)
+print("your BMI is %.1f" %bmi)
+print(lower and upper limits of weight between %.2f and %.2fKgs at present" %(wlower,wupper))
+if weight<=wlower:
+     print("you are under weight)
+elif weight>=wobese:
+      print("you are obese")
+elif weight>wupper:
+     print("you are overweight")
+else:
+  print("you are in normal body weight")
+     
